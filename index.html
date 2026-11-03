@@ -31,7 +31,6 @@
       overflow-x: hidden;
     }
 
-    /* Decorative Border Frame */
     .page-frame {
       max-width: 1000px;
       margin: 20px auto;
@@ -42,7 +41,6 @@
       position: relative;
     }
 
-    /* Typography */
     h1, h2, h3 {
       font-family: 'Cormorant Garamond', serif;
     }
@@ -84,7 +82,6 @@
       font-size: 1rem;
     }
 
-    /* Hero Section */
     .hero {
       padding: 40px 20px 20px;
     }
@@ -116,7 +113,6 @@
       margin: -10px 0;
     }
 
-    /* Countdown Timer */
     .countdown-box {
       display: flex;
       justify-content: center;
@@ -150,7 +146,6 @@
       color: var(--text-muted);
     }
 
-    /* Section Containers */
     section {
       padding: 35px 15px;
       max-width: 850px;
@@ -163,7 +158,6 @@
       margin-bottom: 5px;
     }
 
-    /* Cards Grid */
     .grid-2 {
       display: flex;
       flex-wrap: wrap;
@@ -233,11 +227,248 @@
       font-size: 0.9rem;
     }
 
-    /* Buttons */
     .btn {
       display: inline-block;
       margin-top: 15px;
       padding: 11px 22px;
       background-color: var(--burgundy);
       color: #ffffff;
-      text-decoration:
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 6px;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .btn-gold {
+      background-color: var(--gold);
+      color: #fff;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--burgundy);
+      border: 1.5px solid var(--burgundy);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 25px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid var(--gold-light);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      padding: 35px 15px 15px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: var(--text-muted);
+    }
+
+    .with-love {
+      font-size: 1.4rem;
+      color: var(--burgundy);
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .couple-names { font-size: 3.2rem; }
+      .script-title { font-size: 3rem; }
+      .hero-photo { height: 400px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-frame">
+    
+    <header class="hero">
+      <p class="subtitle-caps">With the blessings of Almighty God &amp; our families</p>
+      <p class="subtitle-caps">We joyfully invite you to</p>
+      <div class="script-title">Our Wedding</div>
+      <p style="font-style: italic; color: var(--text-muted); font-size: 0.95rem;">
+        As we begin a beautiful new chapter together
+      </p>
+
+      <img src="ebidiya1.JPG" alt="Ebi John and Diya George" class="hero-photo">
+
+      <div class="couple-names">
+        Ebi John
+        <span>&amp;</span>
+        Diya George
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="subtitle-caps" style="margin-top: 20px;">Counting Down to the Big Day</p>
+      <div class="countdown-box" id="countdown">
+        <div class="time-card"><span id="days">00</span><small>Days</small></div>
+        <div class="time-card"><span id="hours">00</span><small>Hours</small></div>
+        <div class="time-card"><span id="minutes">00</span><small>Minutes</small></div>
+        <div class="time-card"><span id="seconds">00</span><small>Seconds</small></div>
+      </div>
+    </header>
+
+    <section>
+      <h2 class="section-heading">Our Families</h2>
+      <p style="color: var(--text-muted); font-style: italic;">Cordially welcoming you with love and prayers</p>
+      <div class="divider"></div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="family-title">Bride's Parents</div>
+          <p class="parents-names">George &amp; Maya</p>
+          <p class="family-house">Punnolil Family</p>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">
+            With love,<br>
+            <strong>George, Maya &amp; Kevin</strong>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="family-title">Groom's Parents</div>
+          <p class="parents-names">John &amp; Thresiamma</p>
+          <p class="family-house">Mannamkarathara Family</p>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">
+            Sharing in the joy of<br>
+            <strong>Ebi &amp; Diya's Union</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-heading">Celebration Details</h2>
+      <p style="color: var(--text-muted); font-style: italic;">Join us in celebrating our sacred vows</p>
+      <div class="divider"></div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Betrothal Ceremony</h3>
+          <p class="event-detail"><strong>📅 Date:</strong> Saturday, 2 January 2027</p>
+          <p class="event-detail"><strong>🕧 Time:</strong> 12:30 PM</p>
+          <p class="event-detail">
+            <strong>📍 Venue:</strong><br>
+            St. Joseph’s Church,<br>
+            Njarakadu
+          </p>
+          <div class="reception-banner">
+            <strong>🍽️ Reception to follow</strong><br>
+            1:00 PM – 3:00 PM | Parish Hall
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=St.+Joseph's+Church+Njarakadu" target="_blank" class="btn">
+            📍 Directions to Betrothal
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Holy Matrimony</h3>
+          <p class="event-detail"><strong>📅 Date:</strong> Monday, 4 January 2027</p>
+          <p class="event-detail"><strong>🕚 Time:</strong> 11:00 AM</p>
+          <p class="event-detail">
+            <strong>📍 Venue:</strong><br>
+            St. Mary’s Syro Malabar Forane Church<br>
+            (Valiyapally)
+          </p>
+          <div class="reception-banner">
+            <strong>🍽️ Wedding Reception</strong><br>
+            12:30 PM | Parish Hall
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=St.+Mary's+Syro+Malabar+Forane+Church+Valiyapally" target="_blank" class="btn">
+            📍 Directions to Wedding
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-heading">Our Moments</h2>
+      <p style="color: var(--text-muted); font-style: italic;">A glimpse into our journey together</p>
+      <div class="divider"></div>
+
+      <div class="gallery-grid">
+        <img src="ebidiya1.JPG" alt="Ebi and Diya Photo 1">
+        <img src="ebidiya2.JPG" alt="Ebi and Diya Photo 2">
+        <img src="ebidiya4.JPG" alt="Ebi and Diya Photo 3">
+        <img src="ebidiya4.jpeg" alt="Ebi and Diya Photo 4">
+      </div>
+    </section>
+
+    <section>
+      <div class="card" style="max-width: 700px; margin: 0 auto; background: #fdfaf5;">
+        <h2 class="section-heading" style="font-size: 2rem;">Share &amp; View Memories</h2>
+        <p style="color: var(--text-muted); margin: 10px 0 20px;">
+          Captured a special candid moment at our Betrothal or Wedding? Upload your photos below so we can cherish them forever, or browse the official wedding album!
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+          <a href="#upload-link-here" target="_blank" class="btn btn-gold">
+            📸 Upload Photos You Took
+          </a>
+          <a href="#google-drive-link-here" target="_blank" class="btn btn-outline">
+            📁 Official Wedding Google Drive Album
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="divider"></div>
+      <p style="font-style: italic;">
+        "Your presence, love, and blessings will make our special days even more memorable."
+      </p>
+      <p class="with-love">With love — George, Maya &amp; Kevin | Punnolil &amp; Mannamkarathara Families</p>
+    </footer>
+
+  </div>
+
+  <script>
+    const targetDate = new Date("2027-01-02T12:30:00+05:30").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        document.getElementById("countdown").innerHTML = "<p style='font-size:1.3rem; color:#7a1c24; font-weight:600;'>Celebrations Have Begun!</p>";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = String(days).padStart(2, '0');
+      document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+      document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+      document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>
