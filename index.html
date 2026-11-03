@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement & Wedding Invitation</title>
+    <!-- Load Tailwind CSS for easy, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load elegant Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom Font Classes */
+        .font-script {
+            font-family: 'Great Vibes', cursive;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Responsive iframe for Google Maps */
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body class="bg-[#fdfbf7] text-gray-800 font-serif selection:bg-rose-200 selection:text-rose-900">
+
+    <!-- Navigation (Simple) -->
+    <nav class="fixed w-full bg-[#fdfbf7]/90 backdrop-blur-sm z-50 py-4 border-b border-rose-100">
+        <div class="max-w-4xl mx-auto px-4 flex justify-center space-x-6 text-sm tracking-widest uppercase">
+            <a href="#home" class="hover:text-rose-600 transition">Home</a>
+            <a href="#details" class="hover:text-rose-600 transition">Details</a>
+            <a href="#gallery" class="hover:text-rose-600 transition">Gallery</a>
+        </div>
+    </nav>
+
+    <!-- Hero / Welcome Banner -->
+    <header id="home" class="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-16">
+        <p class="text-sm tracking-widest uppercase mb-4 text-rose-500">We are getting married!</p>
+        <h1 class="font-script text-6xl md:text-8xl text-gray-900 mb-6 mt-4">
+            Diya & Ebi
+        </h1>
+        <p class="text-xl md:text-2xl italic text-gray-600 mb-8">
+            Request the honor of your presence at their engagement and wedding celebration.
+        </p>
+        <div class="border-t border-b border-rose-200 py-4 px-8 mt-4">
+            <p class="text-2xl font-semibold">January 15, 2027</p>
+        </div>
+    </header>
+
+    <!-- Details & Map Section -->
+    <section id="details" class="py-20 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-script text-5xl text-rose-600 mb-4">When & Where</h2>
+                <div class="w-16 h-px bg-rose-300 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Details Text -->
+                <div class="space-y-8 text-center md:text-left md:pl-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">The Ceremony</h3>
+                        <p class="text-gray-600">Saturday, January 15th, 2027</p>
+                        <p class="text-gray-600">3:00 PM in the Afternoon</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">The Venue</h3>
+                        <p class="text-gray-600">The Grand Estate Gardens</p>
+                        <p class="text-gray-600">123 Celebration Lane</p>
+                        <p class="text-gray-600">Halifax, NS B3J 2K9</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Reception</h3>
+                        <p class="text-gray-600">Dinner and dancing to follow immediately after the ceremony in the Main Hall.</p>
+                    </div>
+                </div>
+
+                <!-- Map iframe placeholder -->
+                <div class="shadow-lg p-2 bg-[#fdfbf7] rounded-sm">
+                    <div class="map-responsive border border-rose-100">
+                        <!-- REPLACE THIS IFRAME with your actual Google Maps embed code -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45422.38714652251!2d-63.630043516089334!3d44.64886259021206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a211407dbfac1%3A0x666be3a6438b2d33!2sHalifax%2C%20NS!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-20 px-4 bg-[#fdfbf7]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-script text-5xl text-rose-600 mb-4">Our Memories</h2>
+                <div class="w-16 h-px bg-rose-300 mx-auto mb-4"></div>
+                <p class="text-gray-600 italic">A few glimpses into our journey together.</p>
+            </div>
+
+            <!-- CSS Grid for Gallery -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Image 1 -->
+                <div class="overflow-hidden rounded-sm shadow-md group">
+                    <!-- Replace the src with your actual image path, e.g., src="images/photo1.jpg" -->
+                    <img src="https://placehold.co/600x600/e2e8f0/475569?text=Engagement+Photo+1" alt="Couple Photo 1" class="w-full h-full object-cover aspect-square group-hover:scale-105 transition duration-500">
+                </div>
+                <!-- Image 2 -->
+                <div class="overflow-hidden rounded-sm shadow-md group">
+                    <img src="https://placehold.co/600x600/e2e8f0/475569?text=Engagement+Photo+2" alt="Couple Photo 2" class="w-full h-full object-cover aspect-square group-hover:scale-105 transition duration-500">
+                </div>
+                <!-- Image 3 -->
+                <div class="overflow-hidden rounded-sm shadow-md group">
+                    <img src="https://placehold.co/600x600/e2e8f0/475569?text=Engagement+Photo+3" alt="Couple Photo 3" class="w-full h-full object-cover aspect-square group-hover:scale-105 transition duration-500">
+                </div>
+                <!-- Image 4 -->
+                <div class="overflow-hidden rounded-sm shadow-md group">
+                    <img src="https://placehold.co/600x600/e2e8f0/475569?text=Engagement+Photo+4" alt="Couple Photo 4" class="w-full h-full object-cover aspect-square group-hover:scale-105 transition duration-500">
+                </div>
+                <!-- Image 5 -->
+                <div class="overflow-hidden rounded-sm shadow-md group">
+                    <img src="https://placehold.co/600x600/e2e8f0/475569?text=Engagement+Photo+5" alt="Couple Photo 5" class="w-full h-full object-cover aspect-square group-hover:scale-105 transition duration-500">
+                </div>
+                <!-- Image 6 -->
+                <div class="overflow-hidden rounded-sm shadow-md group">
+                    <img src="https://placehold.co/600x600/e2e8f0/475569?text=Engagement+Photo+6" alt="Couple Photo 6" class="w-full h-full object-cover aspect-square group-hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 text-center border-t border-rose-100">
+        <h2 class="font-script text-4xl text-gray-800 mb-4">We can't wait to celebrate with you!</h2>
+        <p class="text-sm tracking-widest uppercase text-gray-500">Sarah & James • 2027</p>
+    </footer>
+
+</body>
+</html>
